@@ -1,0 +1,119 @@
+footer {
+    display: grid;
+}
+
+@media (max-width: 2560px){
+    footer {
+        grid-template-columns: [first] repeat(4, 1fr) [last];
+    }
+}
+
+@media (max-width: 1200px){
+    footer {
+        grid-template-columns: [first] repeat(2, auto) [last];
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    footer {
+        grid-template-columns: [first] 1fr [last];
+        grid-template-rows: repeat(4, auto);
+    }
+}
+
+footer h2 {
+    text-decoration: underline;
+}
+
+footer h2,
+footer p,
+footer li{
+    color: white;
+}
+
+.about-us {
+    margin: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-us .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.about-us a {
+    width: 60px;
+    height: 60px;
+    background: rgb(62, 86, 203);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us img {
+    width: 40px;
+    height: 40px;
+}
+
+.quick-links {
+    margin: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quick-links li {
+    margin-top: 7px;
+}
+
+.shop {
+    margin: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shop li {
+    margin-top: 7px;
+}
+
+.contact-us {
+    margin: 10px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us p {
+    margin-top: 7px;
+}
+
+.address:before {
+    content: '📍 ';
+}
+
+.phone:before {
+    content: '📞 ';
+}
+
+.email:before {
+    content: '📧 ';
+}
+
+footer:after {
+    content: 'Copyright © 2022 Student MIREA All Wrongs Reserved';
+    background: rgb(31, 57, 137);
+    color: white;
+    grid-row: 5 / span 1;
+    grid-column: first / last;
+    text-align: center;
+}
