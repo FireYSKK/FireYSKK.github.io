@@ -133,4 +133,12 @@ input {
         "pass2"
         "motto";
     }
+    .grid_task3_elem h3 {
+        top: 1vh;
+    }
+      
+    .max-size:focus+h3,
+    .max-size:hover+h3 {
+        top: -60%;
+    }
 }
