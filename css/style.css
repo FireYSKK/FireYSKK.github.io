@@ -1,153 +1,75 @@
-header > a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
+@font-face {
+    font-family: "Borsok";
+    src: url('fonts/Borsok/Borsok.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Borsok/Borsok.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/Borsok/Borsok.woff') format('woff'), /* Modern Browsers */
+         url('fonts/Borsok/Borsok.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+ }
+
+* {
+    margin: 0;
 }
 
-header img {
-    width: 50px;
-    height: 50px;
+.main-page {
+    height: 200vh;
+    width: 100%;
+    object-fit: cover;
 }
 
-header h1 {
-    font-family: Jokerman;
-    color: white;
+#main-page-background {
+    width: 100%;
 }
 
-.navi {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.welcome-block {
+    width: inherit;
+    height: min-content;
     position: relative;
 }
 
-.navi .top-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 5px;
-}
+#welcome-text {
+    position: absolute;
+    top: 13%;
+    padding: 5%;
+    width: 35%;
+    height: 33%;
+    background-color: #FDEEDC;
+    border-radius: 100% / 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 
-.top-row h2 {
-    color: white;
-}
-
-.navi img {
-    display: block;
-    width: 100%;
-}
-
-.navi a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 5vh;
-    background-image: linear-gradient(to top,#38af90,#78b84d);
-    border: 3px solid yellow;
-}
-
-.navi span {
-    color: white;
-    font-size: 25px;
-}
-
-.sidebar{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    height: fit-content;
-    align-self: center;
-    background: rgba(102,89,155,.59);
-}
-
-.sidebar .news-container {
-    padding: 5px;
-}
-
-.sidebar .news-container:not(:first-child) h2{
-    border-top: 1px solid aliceblue;
-}
-
-.news-container h2,
-.news-container p{
-    color: lightgray;
-    padding-top: 5px;
-    margin-bottom: 5px;
-}
-
-.news-container > .publish-date {
-    color: black;
-}
-
-.publish-date:before {
-    content: url(/src/clock-svgrepo-com.svg);
-    display: inline-block;
-    align-self: center;
-    width: 12px;
-    height: 12px;
-    margin-right: 3px;
-}
-
-.news-container:hover {
-    background: rgba(123, 105, 192, 0.59);
-}
-
-@media (min-width: 1201px){
-    .sidebar {
-        border-top: 5px solid white;
-        border-right: 5px solid white;
-        border-bottom: 5px solid white;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        margin-top: 5px;
-        margin-right: 5px;
-        margin-bottom: 5px;
-    }
-}
-
-.ads {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: fit-content;
-    align-self: center;
 }
 
-.ad-container {
-    padding: 5px;
+#welcome-text h1 {
+    font-family: 'Borsok';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3vw;
+    color: #E38B29;
 }
 
-.ad-container h3,
-.ad-container p{
-    vertical-align: middle;
+#welcome-text p {
+    font-family: 'Borsok';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1vw;
 }
 
-.ad-container:hover {
-    background: lightblue;
+.animation-trigger {
+    transform: translateY(0);
+    opacity: 0;
+    transition: 0.9s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.15s 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: blur(10px);
 }
 
-@media (min-width: 1201px){
-    .ads {
-        border-top: 3px solid yellow;
-        border-left: 3px solid yellow;
-        border-bottom: 3px solid yellow;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        margin-left: 5px;
-    }
-}
-
-@media (max-width: 768px){
-    .ad-container img {
-        max-width: 50%;
-        float: left;
-        margin-right: 10px;
-    }
+.animation-trigger.animated {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    filter: blur(0);
 }
