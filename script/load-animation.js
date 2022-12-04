@@ -3,7 +3,7 @@ function isScrolledIntoView(el) {
     var elementTop = rect.top;
     var elementBottom = rect.bottom;
 
-    var isVisible = elementTop < window.innerHeight && elementBottom >= 0;
+    var isVisible = elementTop < (window.innerHeight - 120) && elementBottom >= 0;
     return isVisible;
 }
 

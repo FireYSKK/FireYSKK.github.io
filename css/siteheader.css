@@ -1,0 +1,96 @@
+.siteheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(255, 255, 255, 0.8);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteheader .scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteheader nav a{
+    font-size: 20px;
+    color: #88551b;
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 17px;
+    padding: 0 10px;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+.siteheader nav a i {
+    display: inline-block;
+    background: #fffba7;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0%;
+    height: 20px;
+    z-index: -1;
+    margin-top: -11px;
+    opacity: 1;
+}
+
+.siteheader nav a:hover i {
+    opacity: 1;
+    width: 100%;
+    transition: 0.4s;
+}
+
+#scroll-to-top {
+    fill: #88551b;
+    width: 2vw;
+    height: 2vw;
+}
+
+.siteheader nav ul {
+    display: none;
+}
+
+.siteheader[data-navcheck="history"] a[data-sub="history"] + ul,
+.siteheader[data-navcheck="news"] a[data-sub="news"] + ul,
+.siteheader[data-navcheck="calendar"] a[data-sub="calendar"] + ul,
+.siteheader[data-navcheck="gallery"] a[data-sub="gallery"] + ul{
+    position: fixed;
+    top: 5%;
+    left: -7%;
+    width: 107%;
+    height: 5%;
+    background-color: rgb(241, 166, 97, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: submenudropdown 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes submenudropdown {
+    0%{  
+        display: inherit;
+        height: 0;
+    }
+    100%{
+        height: 5%;
+    }
+}
+
+a[data-sub] + ul a {
+    color: white;
+    font-size: 18px;
+}
+
+li:nth-child(n):not(li:last-child){
+    border-right: 2px solid white;
+}

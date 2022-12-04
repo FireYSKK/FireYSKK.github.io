@@ -4,83 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/siteheader.css">
     <title>Мир автогонок</title>
 </head>
 <body>
 
     <header class="siteheader" style="left: 0px;">
-        <!-- <p class="close"><a href="#close"></a></p>
+        <p class="close"><a href="#close"></a></p>
         <nav>
             <div class="scroll">
-                <a href="./" data-tophref="#contents">Top<i></i></a>
-                <a href="./?to=introduction" data-tophref="#introduction">Introduction<i></i></a>
-                <a href="./landscape.html" class="noanc" data-sub="world">World<i></i></a>
+                <a href="./" data-tophref="#contents">
+                    <svg version="1.1" id="scroll-to-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                        <polygon points="123.709,380.589 245.002,256.804 366.291,380.589 328.422,417.571 245.002,332.435 161.578,417.571 			"/>
+                        <polygon points="0,322.466 245.004,72.429 490,322.466 413.507,397.168 245.004,225.2 76.493,397.168 			"/>
+                    </svg>
+                    <i></i>
+                </a>
+                <a href="./?to=introduction" data-sub="history">История<i></i></a>
                 <ul>
-                    <li class="english"><a href="landscape.html">Landscape</a></li>
+                    <li><a href="formula.html">Формула</a></li>
+                    <li><a href="nascar.html">NASCAR</a></li>
+                    <li><a href="RTCC.html">РСКГ</a></li>
+                    <li><a href="endurance.html">Эндюранс</a></li>
+                    <li><a href="rally.html">Ралли</a></li>
+                    <li><a href="drag.html">Дрэг</a></li>
+                    <li><a href="drift.html">Дрифт</a></li>
+                    <li><a href="carting.html">Картинг</a></li>
+                </ul>
+                <a href="./landscape.html" data-sub="news">Новости<i></i></a>
+                <ul>
+                    <li><a href="news.html">Лента новостей</a></li>
                 </ul>
                 
-                <a href="characters.html" class="noanc" data-sub="characters">Characters<i></i></a>
+                <a href="characters.html" data-sub="calendar">Календарь<i></i></a>
                 <ul>
-                    <li><a href="characters.html">Characters</a></li>
-                    <li><a href="ryza.html">Ryza</a></li>
-                    <li><a href="lent.html">Lent </a></li>
-                </ul>
-                <ul>
-                    <li><a href="tao.html">Tao</a></li>
-                    <li><a href="klaudia.html">Klaudia</a></li>
-                    <li><a href="empel.html">Empel</a></li>
-                    <li><a href="Lila.html">lila</a></li>
+                    <li><a href="calendar-12-2022.html">Декабрь 2022</a></li>
+                    <li><a href="calendar-1-2023.html">Январь 2023</a></li>
+                    <li><a href="calendar-2-2023.html">Февраль 2023</a></li>
                 </ul>
                 
-                <a href="synthesis.html" class="noanc" data-sub="system">System<i></i></a>
+                <a href="synthesis.html" data-sub="gallery">Галерея<i></i></a>
                 <ul>
-                    <li class="english"><a href="gathering.html">Gathering</a></li>
-                    <li class="english"><a href="synthesis.html">Synthesis</a></li>
-                    <li class="english"><a href="battle.html">Battle</a></li>
-                    <li class="english"><a href="new-feature.html">New Feature</a></li>
+                    <li><a href="gathering.html">Интерактивный зал</a></li>
                 </ul>
-                
-                <a href="movie.html" class="noanc" data-sub="gallery">Gallery<i></i></a>
-                <ul>
-                    <li class="english"><a href="movie.html?to=movie">Movie</a></li>
-                    <li class="english"><a href="movie.html?to=gallery">Gallery</a></li>
-                </ul>
-                <a href="contest.html" class="noanc" data-sub="special">Special<i></i><b>New</b></a>
-                <ul>
-                    <li class="english"><a href="special.html">FAN-ART/COSPLAY</a></li>
-                    <li class="english"><a href="wallpaper.html">Wallpaper</a></li>
-                    <li class="english"><a href="icon.html">Social Media Icons</a></li>
-                    <li class="english"><a href="contest.html">Photo Contest</a></li>
-                    <li class="english"><a href="welcome.html">#WelcomeBackRyza Campaign<span>New</span></a></li>
-                </ul>
-                <a href="products.html" class="noanc" data-sub="products">Products<i></i><b>Update</b></a>
-                <ul>
-                    <li class="english"><a href="products.html">Products</a></li>
-                    <li class="english"><a href="update.html">Update</a></li>
-                </ul>
-                    
-                <a href="dlc01.html" class="noanc">DLC<i></i><b>Update</b></a>
-                <a href="news.html" class="noanc">News<i></i><b>Update</b></a>
                 
             </div>
         </nav>
-        <p class="order"><a href="products.html">Pre-order now</a></p> -->
         
     </header>
 
 
     <div class="main-page">
-        <div class="welcome-block">
+        <div class="welcome-block" id="contents">
             <img src="src/main-page.jpg" alt="main-le-man-asian" id="main-page-background">
             <div id="welcome-text" class="animation-trigger">
                 <p>Добро пожаловать в</p>
                 <h1>МИР АВТОГОНОК</h1>
-                <p>Данный веб-сайт разработан с целью упрощения знакомства пользователя с автоспортом и его долгой и насыщенной историей, активно изменяющимся настоящим и, возможно, дать представление о том, что его ждет в непредсказуемом будушем.</p>
-            </div>            
+                <p style="margin-top: 10px;">Данный веб-сайт разработан с целью упрощения знакомства с автоспортом и его долгой и насыщенной историей, бурным настоящим, а также дать представление о том, что может ждать его в непредсказуемом будущем.</p>              
+            </div>    
+            <div class="updatearr out">
+                <a href="#history" class="anchor">Далее<i><img src="src/arrow.png" alt=""></i></a>
+            </div>        
+        </div>
+
+        <div class="history-block" id="history">
+            <div id="history-introduction" class="animation-trigger">
+                <h2>История Автоспорта</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/p-b-p1895.png" alt="paris-bordeuax-paris-1895" title="Рисунок гонщиков-участник гонки Париж-Бордо-Париж 1895 года">
+            </div>
+            <div id="road1" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-formula" class="animation-trigger">
+                <h2>Формула</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/formula.jpg" alt="formula-1-max-verstappen" title="Автомобиль Формулы-1 команды Redbull">
+            </div>
+            <div id="road2" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-nascar" class="animation-trigger">
+                <h2>NASCAR</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/nascar1.jpg" alt="nascar" title="Поток автомобилей NASCAR в повороте">
+            </div>
+            <div id="road3" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-rtcc" class="animation-trigger">
+                <h2>Российская Серия Кольцевых Гонок</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/rtcc.jpg" alt="rtcc" title="Этап РСКГ на автодроме Moscow Raceway">
+            </div>
+            <div id="road4" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-endurance" class="animation-trigger">
+                <h2>Гонки на выносливость</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/le-mans-24.jpg" alt="le-mans-24" title="Фото со стартой решетки 24 часов Ле Мана 2021">
+            </div>
+            <div id="road5" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-rally" class="animation-trigger">
+                <h2>Ралли</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/rally.jpg" alt="le-mans-24" title="Фото со стартой решетки 24 часов Ле Мана 2021">
+            </div>
+            <div id="road6" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-drag" class="animation-trigger">
+                <h2>Дрэг</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/drag.jpg" alt="le-mans-24" title="Фото со стартой решетки 24 часов Ле Мана 2021">
+            </div>
+            <div id="road7" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-drift" class="animation-trigger">
+                <h2>Дрифт</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/drift.jpg" alt="drift" title="Дрифт на Mazda Rx7">
+            </div>
+            <div id="road8" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
+
+            <div id="history-carting" class="animation-trigger">
+                <h2>Картинг</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend lorem a venenatis commodo. Aenean at pretium ligula. Vestibulum augue justo, consequat nec ornare viverra, mollis vitae elit. Nam tincidunt sit amet justo quis dapibus. Sed commodo finibus enim, eget tristique tellus volutpat sit amet. Nullam sit amet mauris felis. Nam nec dolor molestie elit rhoncus venenatis sit amet eget ex. Proin viverra arcu eget facilisis commodo. Vestibulum eu justo leo. Nunc dignissim ipsum a felis commodo dapibus. Mauris interdum turpis justo, id auctor nisi pretium nec. Sed varius dui dui, vel congue neque tempor ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis magna purus, eu scelerisque nulla finibus nec.</p>
+                <img src="src/types/carting.jpg" alt="le-mans-24" title="Фото со стартой решетки 24 часов Ле Мана 2021">
+            </div>
+            <div id="road9" class="animation-trigger">
+                <img src="src/road.jpg" alt="road">
+            </div>
         </div>
     </div>
 
+    <div class="main-background">
+        <img src="src/main-background.jpg" alt="main-background">
+    </div>
+
     <script src="script/load-animation.js"></script>
+    <script src="script/siteheader.js"></script>
 </body>
 </html>
