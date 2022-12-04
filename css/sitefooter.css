@@ -1,0 +1,91 @@
+.sitefooter {
+    padding-top: 1vh;
+    background-color: #E38B29;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "social contact"
+    "copyright copyright";
+}
+
+.social {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    grid-area: social;
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social_div {
+    display: flex;
+}
+
+.logo {
+    border-radius: 10px;
+    margin: 0;
+    padding: 2px;
+    height: 40px;
+    width: 40px;
+    margin-right: 6px;
+    transition: 0.12s;
+}
+
+.logo.telegram:hover {
+    background-color: rgb(42 171 238);
+    fill: white;
+} 
+
+.logo.youtube:hover {
+    background-color: white;
+    fill: red;
+} 
+
+.logo.vk:hover {
+    background-color: white;
+    fill: rgb(0, 119, 255);
+}
+
+svg {
+    transition: 0.12s;
+}
+
+svg:hover {
+    fill: var(--focus-main-color);
+}
+
+#contact {
+    grid-area: contact;
+    justify-self: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: rgb(65, 205, 252);
+}
+
+.footer_h {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#copyright {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    grid-area: copyright;
+    width: 100%;
+    justify-self: center;
+    background-color: #88551b;
+    text-align: center;
+}
+
+#copyright p{
+    color: black;
+}
