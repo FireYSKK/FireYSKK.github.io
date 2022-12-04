@@ -20,5 +20,4 @@ document.onscroll = (event) => {
             element.classList.add("animated");
         }
     });
-    
 };

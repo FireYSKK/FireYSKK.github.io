@@ -143,7 +143,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: max-content;
+    height: 960vh;
     padding-bottom: 5vh;
 }
 
@@ -434,7 +434,140 @@
     z-index: 0;
 }
 
+/* Блок новостей */
 
+.news-block {
+    width: inherit;
+    height: min-content;
+    position: relative;
+    background-color: #fff;
+}
+
+#news-background {
+    width: 100%;
+}
+
+#news-text {
+    position: absolute;
+    top: 23%;
+    padding: 3%;
+    width: 31%;
+    height: 23%;
+    background-color: rgb(253, 238, 220, 0.7);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#news-text h2 {
+    font-family: 'Borsok';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5vw;
+    color: rgb(8, 43, 125);
+}
+
+#news-text p {
+    font-family: 'Borsok';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+#news-text a {
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    border-radius: 0.8vw;
+    margin-top: 10px;
+    font-family: "Borsok";
+    color: white;
+    background-color: rgb(8, 43, 125);
+}
+
+#news-text a:hover {
+    background-color: rgb(50, 131, 238);
+}
+
+/* Блок Календаря */
+
+.calendar-block {
+    width: inherit;
+    height: 90vh;
+    position: relative;
+    background: linear-gradient(45deg, white, rgb(253, 238, 220, 0.7));
+    overflow: hidden;
+}
+
+#calendar-background {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    filter: blur(5px);
+}
+
+#calendar-floating {
+    position: absolute;
+    top: 31%;
+    left: 31%;
+    padding: 4%;
+    width: 51%;
+    height: 29%;
+    background-color: rgb(253, 238, 220, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 1.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#calendar-floating img {
+    height: 94%;
+    margin-right: 2vw;
+}
+
+#calendar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#calendar-text h2 {
+    font-family: 'Borsok';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5vw;
+    color: rgb(33, 96, 166);
+}
+
+#calendar-text p {
+    font-family: 'Borsok';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+#calendar-text a {
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    border-radius: 0.8vw;
+    margin-top: 10px;
+    font-family: "Borsok";
+    color: white;
+    background-color: rgb(33, 96, 166);
+}
+
+#calendar-text a:hover {
+    background-color: rgb(50, 131, 238);
+}
 
 
 
