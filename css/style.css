@@ -144,6 +144,40 @@
     flex-direction: column;
     width: 100%;
     height: max-content;
+    padding-bottom: 5vh;
+}
+
+.history-block h2 {
+    font-family: "Borsok";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.65vw;
+    margin-bottom: 10px;
+}
+
+.history-block p {
+    font-size: 1vw;
+    margin-bottom: 10px;
+}
+
+.history-block img {
+    width: 100%;
+    margin-bottom: 1.5vh;
+}
+
+.history-block a {
+    margin-left: 37%;
+    margin-right: 37%;
+    font-size: 1.6vw;
+    padding: 0.5vw;
+    border-radius: 1.1vw;
+    font-family: "Borsok";
+    color: white;
+    background-color: #E38B29;
+}
+
+.history-block a:hover {
+    background-color: #88551b;
 }
 
 /* Вводная часть */
@@ -160,23 +194,6 @@
     backdrop-filter: blur(0.3vw);
     text-align: justify;
     z-index: 0;
-}
-
-#history-introduction h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-introduction p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-introduction img {
-    width: 100%;
 }
 
 #road1 {
@@ -207,26 +224,9 @@
     z-index: 0;
 }
 
-#history-formula h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-formula p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-formula img {
-    width: 100%;
-}
-
 #road2 {
     position: absolute;
-    top: 171vh;
+    top: 169vh;
     left: 40vw;
     rotate: 50deg;
     z-index: -100;
@@ -237,6 +237,7 @@
 
 #road2 img{
     width: 20vw;
+    margin-bottom: -10px;
 }
 
 /* Блок Nascar */
@@ -253,23 +254,6 @@
     backdrop-filter: blur(0.3vw);
     text-align: justify;
     z-index: 0;
-}
-
-#history-nascar h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-nascar p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-nascar img {
-    width: 100%;
 }
 
 #road3 {
@@ -300,23 +284,6 @@
     z-index: 0;
 }
 
-#history-rtcc h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-rtcc p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-rtcc img {
-    width: 100%;
-}
-
 #road4 {
     position: absolute;
     top: 444vh;
@@ -345,23 +312,6 @@
     z-index: 0;
 }
 
-#history-endurance h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-endurance p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-endurance img {
-    width: 100%;
-}
-
 #road5 {
     position: absolute;
     top: 555vh;
@@ -378,8 +328,8 @@
 #history-rally{
     position: absolute;
     top: 604vh;
-    left: 4vw;
-    width: 50%;
+    left: 11vw;
+    width: 36%;
     height: max-content;
     padding: 1.5625vw;
     border-radius: 1.5vw;
@@ -389,28 +339,22 @@
     z-index: 0;
 }
 
-#history-rally h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
 #history-rally p {
-    font-size: 1vw;
+    font-size: 1.3vw;
     margin-bottom: 10px;
+    line-height: 1.7vw;
 }
 
 #history-rally img {
-    width: 100%;
+    margin-left: 0.5vw;
+    height: 24vw;
 }
 
 #road6 {
     position: absolute;
-    top: 444vh;
-    left: 35vw;
-    rotate: 30deg;
+    top: 648vh;
+    left: 41vw;
+    rotate: -35deg;
     z-index: -100;
 }
 
@@ -422,7 +366,7 @@
 
 #history-drag{
     position: absolute;
-    top: 373vh;
+    top: 698vh;
     left: 44vw;
     width: 50%;
     height: max-content;
@@ -434,28 +378,11 @@
     z-index: 0;
 }
 
-#history-drag h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-drag p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-drag img {
-    width: 100%;
-}
-
 #road7 {
     position: absolute;
-    top: 444vh;
+    top: 728vh;
     left: 35vw;
-    rotate: 30deg;
+    rotate: 43deg;
     z-index: -100;
 }
 
@@ -467,9 +394,9 @@
 
 #history-drift{
     position: absolute;
-    top: 373vh;
-    left: 44vw;
-    width: 50%;
+    top: 773vh;
+    left: 9vw;
+    width: 43%;
     height: max-content;
     padding: 1.5625vw;
     border-radius: 1.5vw;
@@ -479,28 +406,11 @@
     z-index: 0;
 }
 
-#history-drift h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-drift p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-drift img {
-    width: 100%;
-}
-
 #road8 {
     position: absolute;
-    top: 444vh;
-    left: 35vw;
-    rotate: 30deg;
+    top: 829vh;
+    left: 23vw;
+    rotate: -30deg;
     z-index: -100;
 }
 
@@ -512,8 +422,8 @@
 
 #history-carting{
     position: absolute;
-    top: 373vh;
-    left: 44vw;
+    top: 880vh;
+    left: 25vw;
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
@@ -522,35 +432,6 @@
     backdrop-filter: blur(0.3vw);
     text-align: justify;
     z-index: 0;
-}
-
-#history-carting h2 {
-    font-family: "Borsok";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.65vw;
-    margin-bottom: 10px;
-}
-
-#history-carting p {
-    font-size: 1vw;
-    margin-bottom: 10px;
-}
-
-#history-carting img {
-    width: 100%;
-}
-
-#road9 {
-    position: absolute;
-    top: 444vh;
-    left: 35vw;
-    rotate: 30deg;
-    z-index: -100;
-}
-
-#road9 img{
-    width: 20vw;
 }
 
 

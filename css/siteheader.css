@@ -91,6 +91,11 @@ a[data-sub] + ul a {
     font-size: 18px;
 }
 
+a[data-sub] + ul a:hover {
+    color: #fffba7;
+    font-size: 18px;
+}
+
 li:nth-child(n):not(li:last-child){
     border-right: 2px solid white;
 }
