@@ -235,6 +235,7 @@ li:nth-child(n):not(li:last-child){
     #scroll-to-top {
         width: min(9.2vh, 9.2vw);
         height: min(9.2vh, 9.2vw);
+        fill: #f38630;
     }
 
     .siteheader {
