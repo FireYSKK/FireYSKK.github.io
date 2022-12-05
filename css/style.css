@@ -19,6 +19,10 @@
     width: 100%;
 }
 
+#mobile-main-page-background {
+    display: none;
+}
+
 .welcome-block {
     width: inherit;
     height: min-content;
@@ -548,6 +552,39 @@
 }
 
 @media (max-width: 800px) {
+
+    #welcome-text {
+        top: 9%;
+        left: 5%;
+        padding: 5%;
+        width: 80%;
+        height: 28%;
+        border-radius: 50%;
+    }
+    
+    #welcome-text h1 {
+        font-size: 30px;
+    }
+    
+    #welcome-text p {
+        font-size: 10px;
+    }
+
+    .main-page-background {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #main-page-background {
+        display: none;
+    }
+    
+    #mobile-main-page-background {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+    }
+
         
     /* Вводная часть */
 
@@ -575,7 +612,7 @@
 
     #road2 {
         margin-left: 30vw;
-        margin-top: -10vh;
+        margin-top: -10vw;
         margin-bottom: calc(-60vw * 0.6428);
         transform: rotate(-15deg);
         z-index: -100;
@@ -722,5 +759,59 @@
 
     #history-carting {
         width: 64%;
+    }
+
+    /* Раздел новостей */
+
+    #news-text {
+        top: 19%;
+        left: 5%;
+        padding: 3%;
+        width: 51%;
+        height: 49%;
+        border-radius: 1.5vw;
+    }
+
+    #news-text h2 {
+        font-size: min(20px, 2.7vw);
+    }
+
+    #news-text p {
+        font-size: min(2.5vh, 2vw);
+        margin-top: 10px;
+    }
+
+    #news-text a {
+        font-size: min(17px, 2.5vw);
+        padding: 0.5vw;
+        border-radius: 0.8vw;
+        margin-top: 10px;
+    }
+
+
+    /* Раздел календаря */
+
+    #calendar-floating {
+        top: 21%;
+        left: 7%;
+        padding: 4%;
+        width: 79%;
+        height: 39%;
+    }
+    
+    #calendar-text h2 {
+        font-size: min(20px, 2.7vw);
+    }
+    
+    #calendar-text p {
+        font-size: min(3.5vh, 2.5vw);
+        margin-top: 0;
+    }
+    
+    #calendar-text a {
+        font-size: min(17px, 2.5vw);
+        padding: 0.5vw;
+        border-radius: 0.8vw;
+        margin-top: 10px;
     }
 }

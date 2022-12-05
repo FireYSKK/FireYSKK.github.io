@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.siteheader label input { 
+    display: none; 
+}
+
 .siteheader .scroll{
     display: flex;
     justify-content: center;
@@ -93,9 +97,155 @@ a[data-sub] + ul a {
 
 a[data-sub] + ul a:hover {
     color: #fffba7;
-    font-size: 18px;
 }
 
 li:nth-child(n):not(li:last-child){
     border-right: 2px solid white;
+}
+
+@media (max-width: 1000px) {
+    .siteheader[data-navcheck="history"] a[data-sub="history"] + ul,
+    .siteheader[data-navcheck="news"] a[data-sub="news"] + ul,
+    .siteheader[data-navcheck="calendar"] a[data-sub="calendar"] + ul,
+    .siteheader[data-navcheck="gallery"] a[data-sub="gallery"] + ul{
+        left: 0;
+        width: 100%;
+    }
+
+    a[data-sub] + ul a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    label .menu {
+        position: absolute;
+        right: -0;
+        top: -0;
+        z-index: 100;
+        width: min(20vw, 25vh, 100px);
+        height: min(20vw, 25vh, 100px);
+        background: rgb(255, 255, 255, 0.8);
+        border-radius: 0;
+        border-bottom-left-radius: 100%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+    }
+
+    .siteheader label .scroll {
+        display: none;
+    }
+      
+    label .hamburger {
+        position: absolute;
+        top: 40%;
+        right: 25%;
+        width: min(30%, 30px);
+        height: 2px;
+        background: #f38630;
+        display: block;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+    }
+      
+    label .hamburger:after, label .hamburger:before {
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #f38630;
+    }
+      
+    label .hamburger:before { top: -10px; }
+      
+    label .hamburger:after { bottom: -10px; }
+      
+    label input:checked + .menu {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;
+        background: rgb(255, 255, 255);
+    }
+      
+    label input:checked + .menu .hamburger {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        
+    }
+      
+    label input:checked + .menu .hamburger:after {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom: 0;
+        
+    }
+      
+    label input:checked + .menu .hamburger:before {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        top: 0;
+        
+    }
+      
+    label input:checked + .menu + nav { 
+        transition: opacity 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+        z-index: 11000;
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        left: 0; 
+    }
+    
+    label input:checked + .menu + nav .scroll { 
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        height: 60vh;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
+
+    label nav {
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+    }
+      
+    label input:checked + .menu + nav a {
+        margin-bottom: 1em;
+        display: block;
+        color: #f38630;
+        text-decoration: none;
+        font-size: min(7.2vh, 7.2vw);
+    }
+        
+    #scroll-to-top {
+        width: min(9.2vh, 9.2vw);
+        height: min(9.2vh, 9.2vw);
+    }
+
+    .siteheader {
+        height: 0;
+    }
+
+    .siteheader nav {
+        z-index: -11000;
+        transform: translate(0, 0) scale(1.2);
+        opacity: 0;
+        left: -150vw;
+        transform-origin: center center;
+    }
 }

@@ -12,55 +12,63 @@
 </head>
 <body>
 
+
     <header class="siteheader" style="left: 0px;">
-        <p class="close"><a href="#close"></a></p>
-        <nav>
-            <div class="scroll">
-                <a href="./" data-tophref="#contents">
-                    <svg version="1.1" id="scroll-to-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
-                        <polygon points="123.709,380.589 245.002,256.804 366.291,380.589 328.422,417.571 245.002,332.435 161.578,417.571 			"/>
-                        <polygon points="0,322.466 245.004,72.429 490,322.466 413.507,397.168 245.004,225.2 76.493,397.168 			"/>
-                    </svg>
-                    <i></i>
-                </a>
-                <a href="./?to=introduction" data-sub="history">История<i></i></a>
-                <ul>
-                    <li><a href="formula.html">Формула</a></li>
-                    <li><a href="nascar.html">NASCAR</a></li>
-                    <li><a href="RTCC.html">РСКГ</a></li>
-                    <li><a href="endurance.html">Эндюранс</a></li>
-                    <li><a href="rally.html">Ралли</a></li>
-                    <li><a href="drag.html">Дрэг</a></li>
-                    <li><a href="drift.html">Дрифт</a></li>
-                    <li><a href="carting.html">Картинг</a></li>
-                </ul>
-                <a href="./news.html" data-sub="news">Новости<i></i></a>
-                <ul>
-                    <li><a href="./news.html">Лента новостей</a></li>
-                </ul>
-                
-                <a href="./calendar.html" data-sub="calendar">Календарь<i></i></a>
-                <ul>
-                    <li><a href="calendar-12-2022.html">Декабрь 2022</a></li>
-                    <li><a href="calendar-1-2023.html">Январь 2023</a></li>
-                    <li><a href="calendar-2-2023.html">Февраль 2023</a></li>
-                </ul>
-                
-                <a href="synthesis.html" data-sub="gallery">Медиа<i></i></a>
-                <ul>
-                    <li><a href="gathering.html">Автоспорт в медиапространстве</a></li>
-                </ul>
-                
-            </div>
-        </nav>
-        
+        <label>
+            <input type="checkbox">
+            <span class="menu"> 
+                <span class="hamburger"></span> 
+            </span>
+            <nav>
+                <div class="scroll">
+                    <a href="./" data-tophref="#contents">
+                        <svg version="1.1" id="scroll-to-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <polygon points="123.709,380.589 245.002,256.804 366.291,380.589 328.422,417.571 245.002,332.435 161.578,417.571 			"/>
+                            <polygon points="0,322.466 245.004,72.429 490,322.466 413.507,397.168 245.004,225.2 76.493,397.168 			"/>
+                        </svg>
+                        <i></i>
+                    </a>
+                    <a href="#history" data-sub="history">История<i></i></a>
+                    <ul>
+                        <li><a href="formula.html">Формула</a></li>
+                        <li><a href="nascar.html">NASCAR</a></li>
+                        <li><a href="RTCC.html">РСКГ</a></li>
+                        <li><a href="endurance.html">Эндюранс</a></li>
+                        <li><a href="rally.html">Ралли</a></li>
+                        <li><a href="drag.html">Дрэг</a></li>
+                        <li><a href="drift.html">Дрифт</a></li>
+                        <li><a href="carting.html">Картинг</a></li>
+                    </ul>
+                    <a href="./news.html" data-sub="news">Новости<i></i></a>
+                    <ul>
+                        <li><a href="./news.html">Лента новостей</a></li>
+                    </ul>
+                    
+                    <a href="./calendar.html" data-sub="calendar">Календарь<i></i></a>
+                    <ul>
+                        <li><a href="calendar-12-2022.html">Декабрь 2022</a></li>
+                        <li><a href="calendar-1-2023.html">Январь 2023</a></li>
+                        <li><a href="calendar-2-2023.html">Февраль 2023</a></li>
+                    </ul>
+                    
+                    <a href="synthesis.html" data-sub="gallery">Медиа<i></i></a>
+                    <ul>
+                        <li><a href="gathering.html">Автоспорт в медиапространстве</a></li>
+                    </ul>
+                    
+                </div>
+            </nav>
+        </label>
     </header>
 
 
     <div class="main-page">
         <div class="welcome-block" id="contents">
-            <img src="src/main-page.jpg" alt="main-le-man-asian" id="main-page-background">
+            <div class="main-page-background">
+                <img src="src/main-page.jpg" alt="main-le-man-asian" id="main-page-background">
+                <img src="src/mobile-main-page.jpg" alt="main-le-man-2016" id="mobile-main-page-background">
+            </div>
             <div id="welcome-text" class="animation-trigger">
                 <p>Добро пожаловать в</p>
                 <h1>МИР АВТОГОНОК</h1>

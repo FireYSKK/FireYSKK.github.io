@@ -63,6 +63,8 @@ svg:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    margin-bottom: 2vh;
 }
 
 #contact a {
@@ -88,4 +90,14 @@ svg:hover {
 
 #copyright p{
     color: black;
+}
+
+@media (max-width: 800px) {
+    .sitefooter {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "social" 
+        "contact"
+        "copyright";
+    }
 }
