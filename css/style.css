@@ -143,8 +143,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 960vh;
-    padding-bottom: 5vh;
+    padding-bottom: 15vh;
 }
 
 .history-block h2 {
@@ -183,9 +182,8 @@
 /* Вводная часть */
 
 #history-introduction{
-    position: absolute;
-    top: 7vh;
-    left: 5vw;
+    margin-top: 7vh;
+    margin-left: 5vw;
     width: 60%;
     height: max-content;
     padding: 1.5625vw;
@@ -197,9 +195,9 @@
 }
 
 #road1 {
-    position: absolute;
-    top: 79vh;
-    left: 55vw;
+    margin-left: 54vw;
+    margin-top: -25vh;
+    margin-bottom: -5vh;
     rotate: -23deg;
     z-index: -100;
 }
@@ -211,9 +209,7 @@
 /* Блок Формулы */
 
 #history-formula{
-    position: absolute;
-    top: 131vh;
-    left: 42vw;
+    margin-left: 42vw;
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
@@ -225,9 +221,9 @@
 }
 
 #road2 {
-    position: absolute;
-    top: 169vh;
-    left: 40vw;
+    margin-left: 35vw;
+    margin-top: -10vh;
+    margin-bottom: calc(-60vw * 0.6428);
     rotate: 50deg;
     z-index: -100;
 
@@ -243,9 +239,7 @@
 /* Блок Nascar */
 
 #history-nascar{
-    position: absolute;
-    top: 261vh;
-    left: 4vw;
+    margin-left: 4vw; 
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
@@ -257,9 +251,9 @@
 }
 
 #road3 {
-    position: absolute;
-    top: 321vh;
-    left: 45vw;
+    margin-left: 44vw;
+    margin-top: -18vw;
+    margin-bottom: -1vw;
     rotate: -30deg;
     z-index: -100;
 }
@@ -271,9 +265,7 @@
 /* Блок РСКГ */
 
 #history-rtcc{
-    position: absolute;
-    top: 373vh;
-    left: 44vw;
+    margin-left: 44vw;
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
@@ -285,9 +277,9 @@
 }
 
 #road4 {
-    position: absolute;
-    top: 444vh;
-    left: 35vw;
+    margin-top: 3vw;
+    margin-left: 35vw;
+    margin-bottom: -20vw;
     rotate: 30deg;
     z-index: -100;
 }
@@ -299,9 +291,7 @@
 /* Блок Ле Мана */
 
 #history-endurance{
-    position: absolute;
-    top: 486vh;
-    left: 18vw;
+    margin-left: 18vw;
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
@@ -313,9 +303,9 @@
 }
 
 #road5 {
-    position: absolute;
-    top: 555vh;
-    left: 28vw;
+    margin-top: -2vw;
+    margin-left: 28vw;
+    margin-bottom: -4vw;
     z-index: -100;
 }
 
@@ -326,9 +316,7 @@
 /* Блок Ралли */
 
 #history-rally{
-    position: absolute;
-    top: 604vh;
-    left: 11vw;
+    margin-left: 11vw;
     width: 36%;
     height: max-content;
     padding: 1.5625vw;
@@ -351,9 +339,8 @@
 }
 
 #road6 {
-    position: absolute;
-    top: 648vh;
-    left: 41vw;
+    margin-top: -23vw;
+    margin-left: 37vw;
     rotate: -35deg;
     z-index: -100;
 }
@@ -365,9 +352,7 @@
 /* Блок Дрэга */
 
 #history-drag{
-    position: absolute;
-    top: 698vh;
-    left: 44vw;
+    margin-left: 44vw; 
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
@@ -379,9 +364,9 @@
 }
 
 #road7 {
-    position: absolute;
-    top: 728vh;
-    left: 35vw;
+    margin-top: 2vw;
+    margin-left: 35vw;
+    margin-bottom: -28vw;
     rotate: 43deg;
     z-index: -100;
 }
@@ -393,9 +378,7 @@
 /* Блок Дрифта */
 
 #history-drift{
-    position: absolute;
-    top: 773vh;
-    left: 9vw;
+    margin-left: 9vw;
     width: 43%;
     height: max-content;
     padding: 1.5625vw;
@@ -407,9 +390,9 @@
 }
 
 #road8 {
-    position: absolute;
-    top: 829vh;
-    left: 23vw;
+    margin-top: -23vw;
+    margin-left: 23vw;
+    margin-bottom: 5vw;
     rotate: -30deg;
     z-index: -100;
 }
@@ -421,9 +404,7 @@
 /* Блок Картинга */
 
 #history-carting{
-    position: absolute;
-    top: 880vh;
-    left: 25vw;
+    margin-left: 25vw;
     width: 50%;
     height: max-content;
     padding: 1.5625vw;
