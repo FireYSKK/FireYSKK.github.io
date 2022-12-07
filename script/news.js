@@ -35,9 +35,7 @@ function addNewsArticle(filename) {
         if (file.readyState === 4) {  // Файл можно парсить
             if (file.status === 200) {  // Файл найден
                 text = file.responseText;
-                fileText = text.split('\r\n');
-                console.log(text);
-                console.log(fileText);
+                fileText = text.split('\n');
 
                 let newsArticle = document.createElement('div');
                 newsArticle.classList.add('news-article');
