@@ -36,6 +36,8 @@ function addNewsArticle(filename) {
             if (file.status === 200) {  // Файл найден
                 text = file.responseText;
                 fileText = text.split('\r\n');
+                console.log(text);
+                console.log(fileText);
 
                 let newsArticle = document.createElement('div');
                 newsArticle.classList.add('news-article');
@@ -66,7 +68,6 @@ function addNewsArticle(filename) {
 function loadMoreNews() {
     for (let i = 0; i < 3; i++) {
         addNewsArticle(nextFileIndex);
-        console.log(nextFileIndex);
         nextFileIndex = (nextFileIndex % NEWSFILES) + 1;
     }
 }
