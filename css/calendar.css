@@ -1,0 +1,112 @@
+.calendar-block {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 3%;
+}
+
+#event-pop-up-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    padding: 3vw;
+    background-color: white;
+
+    box-shadow: 0 0 0 100vw rgb(0, 0, 0, 0.4), 0 0 0 100vh rgb(0, 0, 0, 0.4);
+    z-index: 10000;
+}
+
+#event-pop-up-info img {
+    max-width: 300px;
+    float: left;
+    margin-right: 1rem;
+}
+
+#event-pop-up-info button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    color: lightgray;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+#event-pop-up-info button:hover{
+    color: black;
+}
+
+.notice {
+    width: 90%;
+    padding: 2.5%;
+    border: 2px solid darkgoldenrod;
+    margin: auto;
+    margin-bottom: 2vh;
+    background-color: yellow;
+    text-align: justify;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notice img{
+    width: 6%;
+    margin-right: 1rem;
+    object-fit: fill;
+}
+
+#calendar .fc-daygrid-event {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 540;
+}
+
+@media (max-width: 800px) {
+    .calendar-block {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 10vh;
+    }
+
+    .notice img{
+        width: 10vw;
+    }
+
+    #calendar {
+        width: 94%;
+        margin: auto;
+        min-height: 60vh;
+    }
+
+    #calendar .fc-toolbar-chunk {
+        display: flex;
+        justify-content: center;
+    }
+
+    #event-pop-up-info {
+        width: 95%;
+        padding: 3vw;
+        text-align: center;
+    }
+    
+    #event-pop-up-info img {
+        max-width: 100%;
+        float: left;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #calendar .fc-toolbar-chunk h2{
+        font-size: 1.5em;
+    }
+}
