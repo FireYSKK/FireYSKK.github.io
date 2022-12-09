@@ -1,6 +1,6 @@
 const social = document.querySelector('.social_div');
 let telegram = document.createElement('a');
-telegram.setAttribute('href', "https://telegram.com");
+telegram.setAttribute('href', "https://telegram.org");
 let youtube = document.createElement('a');
 youtube.setAttribute('href', "https://youtube.com")
 let vk = document.createElement('a');
