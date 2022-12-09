@@ -23,6 +23,13 @@
     margin: 6px;
 }
 
+.historic-article h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6px;
+}
+
 .historic-article p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -64,6 +71,11 @@
     }
 
     .historic-article h3{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .historic-article h4{
         margin-left: 1rem;
         margin-right: 1rem;
     }

@@ -225,11 +225,16 @@ li:nth-child(n):not(li:last-child){
     }
       
     label input:checked + .menu + nav a {
-        margin-bottom: 1em;
-        display: block;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
         color: #f38630;
         text-decoration: none;
         font-size: min(7.2vh, 7.2vw);
+        width: 70%;
+        margin: auto;
+        border-top: 2px rgb(243, 134, 48, 0.5) solid;
+        border-bottom: 2px rgb(243, 134, 48, 0.5) solid;
     }
         
     #scroll-to-top {
