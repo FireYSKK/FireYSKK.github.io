@@ -37,6 +37,15 @@
     margin: 6px;
 }
 
+.historic-article ul {
+    list-style: square;
+}
+
+.historic-article li {
+    position: relative;
+    left: 1.5rem;
+}
+
 .historic-article .img-container {
     width: min-content;
     padding: 3px;

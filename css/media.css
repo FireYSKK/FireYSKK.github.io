@@ -1,0 +1,115 @@
+.media-block {
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 3%;
+}
+
+.media-block h2{
+    font-family: 'Borsok';
+    font-size: 30px;
+    font-weight: 500;
+    padding: 1rem;
+    border-bottom: 3px lightgray solid;
+    margin: 6px;
+}
+
+.media-block h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 6px;
+}
+
+.media-block p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 6px;
+}
+
+@media (min-width: 900px){
+    .trailer-container {
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(227,139,41,0.6) 25%, rgba(240,195,144,1) 75%, rgba(255,255,255,1) 100%);
+        border-left: #E38B29 solid 0px;
+        border-right: #E38B29 solid 0px;
+        border-radius: 20px;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out 0.1s;
+    }
+    
+    .trailer-container:hover {
+        background: rgb(227, 139, 41, 0.6);
+        border-left: #E38B29 solid 10px;
+        border-right: #E38B29 solid 10px;
+        border-radius: 20px;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+}
+
+.film-trailer {
+    display: block;
+    width: 70%;
+    margin: auto;
+    height: calc(37.8vw * 10 / 16);
+}
+
+
+@media (max-width: 800px) {
+    .media-block {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .media-block h2{
+        background-color: #E38B29;
+        margin: 0;
+        padding-top: calc(1rem + 2.3vh);
+        padding-bottom: calc(1rem + 2.3vh);
+    }
+
+    #after-h2 {
+        margin-top: calc(2vw + 6px);
+    }
+
+    .media-block h3{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .media-block h4{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .media-block p {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .film-trailer {
+        display: block;
+        width: 60%;
+        margin: auto;
+        height: calc(60vw * 10 / 16);
+    }
+}
+
+@media (max-width: 500px) {
+    .film-trailer {
+        display: block;
+        width: calc(100% - 2rem);
+        margin: 1rem;
+        height: calc(94vw * 10 / 16);
+    }
+}
