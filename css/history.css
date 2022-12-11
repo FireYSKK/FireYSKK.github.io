@@ -124,4 +124,9 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
+    .historic-article li {
+        width: 90%;
+        left: 2rem
+    }
 }

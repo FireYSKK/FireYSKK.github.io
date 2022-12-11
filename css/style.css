@@ -159,8 +159,9 @@
 }
 
 .history-block a {
-    margin-left: 37%;
-    margin-right: 37%;
+    display: block;
+    width: fit-content;
+    margin: auto;
     font-size: 1.6vw;
     padding: 0.5vw;
     border-radius: 1.1vw;
@@ -576,7 +577,7 @@
 
     
     .history-block a {
-        font-size: min(17px, 2.5vw);
+        font-size: max(17px, 2.5vw);
         padding: 0.5vw;
         border-radius: 0.8vw;
     }
