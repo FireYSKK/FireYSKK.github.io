@@ -46,6 +46,37 @@
     left: 1.5rem;
 }
 
+.historic-article blockquote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 6px;
+    text-align: center;
+}
+
+.historic-article blockquote::before {
+    content: "\«";
+    font-size: 30px;
+    padding: 1rem;
+    color: #E38B29;
+    text-align: left;
+}
+
+.historic-article blockquote::after {
+    content: "\»";
+    font-size: 30px;
+    padding: 1rem;
+    color: #E38B29;
+    text-align: right;
+}
+
+#author {
+    text-align: right;
+    padding: 1rem;
+    border-bottom: 3px lightgray solid;
+}
+
 .historic-article .img-container {
     width: min-content;
     padding: 3px;
