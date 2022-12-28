@@ -64,20 +64,22 @@
     display: none;
 }
 
-.siteheader[data-navcheck="history"] a[data-sub="history"] + ul,
-.siteheader[data-navcheck="news"] a[data-sub="news"] + ul,
-.siteheader[data-navcheck="calendar"] a[data-sub="calendar"] + ul,
-.siteheader[data-navcheck="gallery"] a[data-sub="gallery"] + ul{
-    position: fixed;
-    top: 5%;
-    left: -7%;
-    width: 107%;
-    height: 5%;
-    background-color: rgb(241, 166, 97, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: submenudropdown 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+@media (min-width: 801px){
+    .siteheader[data-navcheck="history"] a[data-sub="history"] + ul,
+    .siteheader[data-navcheck="news"] a[data-sub="news"] + ul,
+    .siteheader[data-navcheck="calendar"] a[data-sub="calendar"] + ul,
+    .siteheader[data-navcheck="gallery"] a[data-sub="gallery"] + ul{
+        position: fixed;
+        top: 5%;
+        left: -7%;
+        width: 107%;
+        height: 5%;
+        background-color: rgb(241, 166, 97, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: submenudropdown 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
 }
 
 @keyframes submenudropdown {
